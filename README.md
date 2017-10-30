@@ -28,13 +28,13 @@ https://github.com/Yuri-Jordan/easy_tour_parceiros_docker/blob/master/easyTourAP
   
 ## Método GET Http para busca de parceiros
 
-### Cadastrar parceiros
+### Buscar parceiros
 ###### Esquema do Cenário: Buscar parceiros no sistema 
 ###### (GIVEN) DADOS QUE esteja logado
 ###### (WHEN)  QUANDO é solicitado uma busca na url a busca do parceiro através do CNPJ.
 ###### (THEN)  ENTÃO o sistema deve exibir o parceiro solicitado
   
-### Não cadastrar parceiros
+### Não buscar parceiros
 ###### Esquema do Cenário: Não conseguir buscar parceiros no sistema
 ###### (GIVEN) DADOS QUE esteja logado como
 ###### (WHEN)  QUANDO é solicitado uma busca na url a busca do parceiro através do CNPJ.
