@@ -51,3 +51,34 @@ SENDO um parceiro do sistema EU QUERO buscar o meu estabelecimento com um CNPJ n
 ###### (WHEN)  QUANDO é solicitado uma busca na url a busca do parceiro através do CNPJ não existente.
 ###### (THEN)  ENTÃO será retornado uma página 404.
   
+  
+  
+--------------------------------------------------------------------------------------------------------------------------
+
+### Cadastrar parceiros
+###### Esquema do Cenário: Cadastrar parceiros no sistema - Parceiros.
+###### (GIVEN) DADOS QUE esteja logado como um Administrador ou Parceiro.
+###### (WHEN)  QUANDO é cadastrado um usuário parceiro com o perfil de - Parceiro com dados do Easy Tour.
+###### (THEN)  ENTÃO o sistema deve exibir a mensagem de confirmação de cadastro.
+
+### Não cadastrar parceiros
+###### Esquema do Cenário: Não conseguir cadastrar parceiros no sistema com 11.111.111/0001-11 já existente - Parceiros.
+###### (GIVEN) DADOS QUE esteja logado como um Administrador ou Parceiros.
+###### (WHEN)  QUANDO é cadastrado um usuário parceiro com o mesmo 11.111.111/0001-11.
+###### (THEN)  ENTÃO o sistema deve exibir a mensagem de CNPJ já existente no sistema.
+  
+  
+  
+### Buscar parceiros
+###### Esquema do Cenário: Buscar parceiros no sistema. 
+###### (GIVEN) DADOS QUE esteja logado.
+###### (WHEN)  QUANDO é solicitado uma busca do parceiro através do 11.111.111/0001-11.
+###### (THEN)  ENTÃO o sistema deve exibir o parceiro solicitado.
+  
+
+### Não buscar parceiros
+###### Esquema do Cenário: Não conseguir buscar parceiros no sistema.
+###### (GIVEN) DADOS QUE esteja logado.
+###### (WHEN)  QUANDO é solicitado uma busca do parceiro através do 11.111.111/0001-00 não existente.
+###### (THEN)  ENTÃO será retornado uma página 404.
+ 
